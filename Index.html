@@ -2,93 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Digital Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <nav class="nav">
-      <h1 class="logo">UDHAYAPRAKASH S</h1>
+    <nav>
+      <div class="logo">UDHAYAPRAKASH S</div>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">My Skills</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <section class="hero">
+      <h1>Hello, I'm <span>UDHAYAPRAKASH S</span></h1>
+      <p>A Frontend Developer & Designer</p>
+    </section>
   </header>
 
   <main>
-    <section id="home" class="section hero">
-      <div class="hero-inner">
-        <h2>Hi, I'm <span class="accent">UDHAYAPRAKASH S</span></h2>
-        <p class="tagline"A passionate Web Developer
-
-Currently I'm Studying BCA Second Year in Dr. M. G. R. Chockalingam Arts College, Arni.
-Affilated to Thiruvalluvar University.</p>
-        <div class="hero-cta">
-          <button onclick="scrollToSection('projects')">See Projects</button>
-          <a class="cta-link" href="#contact">Contact Me</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section about">
+    <section id="about">
       <h2>About Me</h2>
-      <p>I'm a web developer who builds responsive, accessible, and performant websites. I enjoy turning ideas into clean, user-friendly interfaces.</p>
+      <p>I am a passionate web developer with experience in creating modern, responsive websites...</p>
     </section>
 
-    <section>
-      <div id="skiils" class="skills">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">React (optional)</div>
-        <div class="skill">Node.js (optional)</div>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
+        <div>React</div>
+        <div>Git</div>
+        <div>Figma</div>
       </div>
     </section>
 
-    <section id="projects" class="section projects">
+    <section id="projects">
       <h2>Projects</h2>
-      <div class="project-grid">
-        <article class="project-card">
-          <h3>Portfolio Website</h3>
-          <p>A responsive portfolio built with HTML, CSS and vanilla JS.</p>
-          <a class="project-btn" href="#" onclick="alert('Open project: Portfolio Website')">View</a>
-        </article>
-
-        <article class="project-card">
-          <h3>Todo App</h3>
-          <p>A small todo application with add/edit/delete and local storage.</p>
-          <a class="project-btn" href="#" onclick="alert('Open project: Todo App')">View</a>
-        </article>
-
-        <article class="project-card">
-          <h3>Weather App</h3>
-          <p>Fetches weather data from an API and displays forecast (demo).</p>
-          <a class="project-btn" href="#" onclick="alert('Open project: Weather App')">View</a>
-        </article>
+      <div class="project-card">
+        <img src="assets/project1.jpg" alt="Project 1" />
+        <h3>Project Title</h3>
+        <p>Short description of the project.</p>
+        <a href="#" target="_blank">View Project</a>
       </div>
     </section>
 
-     <section id="contact" class="section contact">
-      <center>
+    <section id="contact">
       <h2>Contact Me</h2>
-      </center>
-      <form id="contactForm" onsubmit="submitContact(event)">
-        <input type="text" id="name" placeholder="Your name" required>
-        <input type="email" id="email" placeholder="Your email" required>
-        <textarea id="message" placeholder="Message" rows="4" required></textarea>
-        <button type="submit">Send Message</button>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
       </form>
-      <p id="formStatus" aria-live="polite"></p>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 My Portfolio | All Rights Reserved </p>
+    <p>© 2025 Your Name. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
